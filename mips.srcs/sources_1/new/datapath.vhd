@@ -14,12 +14,13 @@ end datapath;
 
 architecture Behavioral of datapath is
     signal R1, R2, result, reg_dest, op2, ext32 : reg32;
-    signal instR, zero : std_logic;
+    signal instR, zero, carry : std_logic;
     signal adD : std_logic_vector(4 downto 0);
 begin
     -- Detector de instruções do tipo R
     instR <= '1' when uins.i=ADDU or uins.i=SUBU or uins.i=AAND or 
-                      uins.i=OOR  or uins.i=XXOR or uins.i=NNOR else '0';
+                      uins.i=OOR  or uins.i=XXOR or uins.i=NNOR or 
+                      uins.i=SSHL or uins.i=SSHR or uins.i=RROL or uins.i=RROR else '0';
     -- Multiplexador 1
     M1 : adD <= instruction(15 downto 11) when instR='1' else instruction(20 downto 16);
     
@@ -48,6 +49,7 @@ begin
             op2=>op2,
             outula=>result,
             zero=>zero,
+            carry =>carry,
             op_ula=>uins.i
         );
     -- Multiplexador 4
