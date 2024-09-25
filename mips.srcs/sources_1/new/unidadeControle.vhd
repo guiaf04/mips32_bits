@@ -28,10 +28,6 @@ begin
                 D=>incpc, 
                 Q=>pc);
        
-    incpc <= pc + 4;
-    
-    
-    i_address <= pc;
     
     -- Decodificação de instrucoes (controla multiplexadores e operações da ULA)
     uins.i <= i;  
@@ -51,6 +47,16 @@ begin
          PSH  when instruction(31 downto 26)="000010" and instruction(10 downto 6)="00001" else
          POP  when instruction(31 downto 26)="000010" and instruction(10 downto 6)="00010" else
          invalid_instruction;
+         
+         
+    incpc <=   ( x"FFFF" & instruction(15 downto 0)) when   i = JMP else                                  --JMP
+               ( x"FFFF" & instruction(15 downto 0)) when  (i = JEQ and zero = '1' and carry = '0') else  --JEQ
+               ( x"FFFF" & instruction(15 downto 0)) when  (i = JLT and zero = '0' and carry = '1') else  --JLT
+               ( x"FFFF" & instruction(15 downto 0)) when  (i = JGT and zero = '0' and carry = '0') else  --JGT
+               pc +4;
+    
+    
+    i_address <= pc; 
          
     assert i /= invalid_instruction
           report "INVALID INSTRUCTION"
