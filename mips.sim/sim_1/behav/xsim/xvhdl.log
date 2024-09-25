@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/ula.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ula'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/guilherme/UFC/SD/ap2/mips/mips.srcs/sim_1/new/tb_ula.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ula'
