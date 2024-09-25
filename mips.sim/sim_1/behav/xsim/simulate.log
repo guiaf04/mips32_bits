@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Error: INVALID INSTRUCTION
+Time: 0 ps  Iteration: 1  Process: /testbench/cpu/uc/line__47  File: /home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/unidadeControle.vhd
+Error: INVALID INSTRUCTION
+Time: 3600 ps  Iteration: 3  Process: /testbench/cpu/uc/line__47  File: /home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/unidadeControle.vhd
+Error: INVALID INSTRUCTION
+Time: 360 ns  Iteration: 7  Process: /testbench/cpu/uc/line__47  File: /home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/unidadeControle.vhd
