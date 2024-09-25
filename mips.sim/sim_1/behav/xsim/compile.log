@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/unidadeControle.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'unidadeControle'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/processadorMIPS.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'processadorMIPS'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/guilherme/UFC/SD/ap2/mips/mips.srcs/sources_1/new/testbench.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'testbench'
