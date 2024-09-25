@@ -8,13 +8,14 @@ entity datapath is
     instruction : in reg32;
     d_address : out reg32;
     uins : in microinstruction;
-    data : inout reg32
+    data : inout reg32;
+    zero, carry : out std_logic
   );
 end datapath;
 
 architecture Behavioral of datapath is
     signal R1, R2, result, reg_dest, op2, ext32 : reg32;
-    signal instR, zero, carry : std_logic;
+    signal instR: std_logic;
     signal adD : std_logic_vector(4 downto 0);
 begin
     -- Detector de instruções do tipo R

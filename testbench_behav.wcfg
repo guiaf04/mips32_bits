@@ -3,41 +3,101 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_ula_behav.wdb" id="1">
+      <db_ref path="testbench_behav.wdb" id="1">
          <top_modules>
             <top_module name="pkg_mips" />
-            <top_module name="tb_ula" />
+            <top_module name="testbench" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="674.130 ns"></ZoomEndTime>
-      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+      <ZoomEndTime time="1,071.934 ns"></ZoomEndTime>
+      <Cursor1Time time="700.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="182"></NameColumnWidth>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
       <ValueColumnWidth column_width="97"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
-   <wvobject type="array" fp_name="/tb_ula/op1">
-      <obj_property name="ElementShortName">op1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">op1[31:0]</obj_property>
+   <WVObjectSize size="20" />
+   <wvobject type="logic" fp_name="/testbench/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_ula/op2">
-      <obj_property name="ElementShortName">op2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">op2[31:0]</obj_property>
+   <wvobject type="logic" fp_name="/testbench/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_ula/outula">
-      <obj_property name="ElementShortName">outula[31:0]</obj_property>
-      <obj_property name="ObjectShortName">outula[31:0]</obj_property>
+   <wvobject type="logic" fp_name="/testbench/ce">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_ula/zero">
-      <obj_property name="ElementShortName">zero</obj_property>
-      <obj_property name="ObjectShortName">zero</obj_property>
+   <wvobject type="logic" fp_name="/testbench/rw">
+      <obj_property name="ElementShortName">rw</obj_property>
+      <obj_property name="ObjectShortName">rw</obj_property>
    </wvobject>
-   <wvobject type="other" fp_name="/tb_ula/op_ula">
-      <obj_property name="ElementShortName">op_ula</obj_property>
-      <obj_property name="ObjectShortName">op_ula</obj_property>
+   <wvobject type="array" fp_name="/testbench/cpu/instruction">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/uins">
+      <obj_property name="ElementShortName">uins</obj_property>
+      <obj_property name="ObjectShortName">uins</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/data">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/Ddata">
+      <obj_property name="ElementShortName">Ddata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Ddata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/i_cpu_address">
+      <obj_property name="ElementShortName">i_cpu_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_cpu_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/d_cpu_address">
+      <obj_property name="ElementShortName">d_cpu_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_cpu_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/data_cpu">
+      <obj_property name="ElementShortName">data_cpu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cpu[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/instruction">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/REGS/reg">
+      <obj_property name="ElementShortName">reg[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/REGS/AdWP">
+      <obj_property name="ElementShortName">AdWP[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AdWP[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/R1">
+      <obj_property name="ElementShortName">R1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/R2">
+      <obj_property name="ElementShortName">R2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/cpu/dp/instR">
+      <obj_property name="ElementShortName">instR</obj_property>
+      <obj_property name="ObjectShortName">instR</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/result">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/reg_dest">
+      <obj_property name="ElementShortName">reg_dest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_dest[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/dp/REGS/wen">
+      <obj_property name="ElementShortName">wen[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wen[31:0]</obj_property>
    </wvobject>
 </wave_config>
