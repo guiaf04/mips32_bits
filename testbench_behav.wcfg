@@ -36,6 +36,14 @@
       <obj_property name="ElementShortName">rw</obj_property>
       <obj_property name="ObjectShortName">rw</obj_property>
    </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/uc/incpc">
+      <obj_property name="ElementShortName">incpc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">incpc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/cpu/uc/pc">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="/testbench/cpu/instruction">
       <obj_property name="ElementShortName">instruction[31:0]</obj_property>
       <obj_property name="ObjectShortName">instruction[31:0]</obj_property>

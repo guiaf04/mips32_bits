@@ -16,6 +16,6 @@
 # ****************************************************************************
 set -Eeuo pipefail
 # simulate design
-echo "xsim testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch testbench.tcl -view /home/guilherme/UFC/SD/ap2/mips/testbench_behav.wcfg -view /home/guilherme/UFC/SD/ap2/mips/ula_tb.wcfg -view /home/guilherme/UFC/SD/ap2/mips/datapath_tb.wcfg -log simulate.log"
-xsim testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch testbench.tcl -view /home/guilherme/UFC/SD/ap2/mips/testbench_behav.wcfg -view /home/guilherme/UFC/SD/ap2/mips/ula_tb.wcfg -view /home/guilherme/UFC/SD/ap2/mips/datapath_tb.wcfg -log simulate.log
+echo "xsim testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch testbench.tcl -view /home/eliton/ufc/mips_32_bits/testbench_behav.wcfg -view /home/eliton/ufc/mips_32_bits/ula_tb.wcfg -view /home/eliton/ufc/mips_32_bits/datapath_tb.wcfg -log simulate.log"
+xsim testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch testbench.tcl -view /home/eliton/ufc/mips_32_bits/testbench_behav.wcfg -view /home/eliton/ufc/mips_32_bits/ula_tb.wcfg -view /home/eliton/ufc/mips_32_bits/datapath_tb.wcfg -log simulate.log
 

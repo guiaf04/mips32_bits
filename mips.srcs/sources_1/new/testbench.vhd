@@ -61,6 +61,10 @@ begin
        instruction <= x"00620824";
        wait for clock_period;
        
+       --000001 00001 00000 00000 00000 000010
+       instruction <= x"04200002";
+       wait for clock_period;
+       
        --000000 00011 00010 00000 00000 100101
        instruction <= x"00620825";
        wait for clock_period;

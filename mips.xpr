@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="/home/guilherme/UFC/SD/ap2/mips/mips.xpr">
+<Project Version="7" Minor="61" Path="/home/eliton/ufc/mips_32_bits/mips.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6cfd58c02ca24ed5b3a908c4b560f4e9"/>
