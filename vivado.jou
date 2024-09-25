@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Sep 25 02:09:07 2024
+# Process ID: 706957
+# Current directory: /home/eliton/ufc/mips_32_bits
+# Command line: vivado
+# Log file: /home/eliton/ufc/mips_32_bits/vivado.log
+# Journal file: /home/eliton/ufc/mips_32_bits/vivado.jou
+# Running On: eliton-notebook, OS: Linux, CPU Frequency: 2078.138 MHz, CPU Physical cores: 8, Host memory: 10294 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/eliton/ufc/mips_32_bits/mips.xpr
+update_compile_order -fileset sources_1
