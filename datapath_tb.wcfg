@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_datapath_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="pkg_mips" />
+            <top_module name="tb_datapath" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,044.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,700.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="176"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject type="logic" fp_name="/tb_datapath/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/instruction">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/uins.ce">
+      <obj_property name="ElementShortName">.ce</obj_property>
+      <obj_property name="ObjectShortName">.ce</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/uins.rw">
+      <obj_property name="ElementShortName">.rw</obj_property>
+      <obj_property name="ObjectShortName">.rw</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_datapath/uins.i">
+      <obj_property name="ElementShortName">.i</obj_property>
+      <obj_property name="ObjectShortName">.i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/uins.wreg">
+      <obj_property name="ElementShortName">.wreg</obj_property>
+      <obj_property name="ObjectShortName">.wreg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/data">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/R1">
+      <obj_property name="ElementShortName">R1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/op2">
+      <obj_property name="ElementShortName">op2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">op2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/R2">
+      <obj_property name="ElementShortName">R2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">R2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/REGS/AdRP1">
+      <obj_property name="ElementShortName">AdRP1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AdRP1[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/REGS/AdRP2">
+      <obj_property name="ElementShortName">AdRP2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AdRP2[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/REGS/AdWP">
+      <obj_property name="ElementShortName">AdWP[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AdWP[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/REGS/DataWP">
+      <obj_property name="ElementShortName">DataWP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataWP[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/REGS/wen">
+      <obj_property name="ElementShortName">wen[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wen[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/result">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/reg_dest">
+      <obj_property name="ElementShortName">reg_dest[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_dest[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/REGS/reg">
+      <obj_property name="ElementShortName">reg[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/ext32">
+      <obj_property name="ElementShortName">ext32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ext32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/DUT/instR">
+      <obj_property name="ElementShortName">instR</obj_property>
+      <obj_property name="ObjectShortName">instR</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/DUT/zero">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_datapath/DUT/carry">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_datapath/DUT/adD">
+      <obj_property name="ElementShortName">adD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">adD[4:0]</obj_property>
+   </wvobject>
+</wave_config>

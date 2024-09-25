@@ -55,7 +55,7 @@ begin
     -- Multiplexador 4
     d_address <= result;
     
-    WMem : data <= R2 when uins.rw='0' and uins.ce='1' else (others=>'Z'); 
+    WMem : data <= R2 when uins.rw='0' and uins.ce='1' else ext32 when uins.i=LW else(others=>'Z'); 
     
     M4 : reg_dest <= data when uins.i=LW else result;
 end Behavioral;
