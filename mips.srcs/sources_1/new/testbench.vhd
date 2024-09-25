@@ -33,7 +33,6 @@ begin
             instruction => instruction,
             ce=>ce,  
             rw=>rw,
-            d_address => d_cpu_address,
             data => data_cpu
         );
         
@@ -71,16 +70,35 @@ begin
        wait for clock_period;
        
        --000000 00011 00010 00000 00000 100111
-       instruction <= x"00620827";
+       instruction <= x"00620828";
+       wait for clock_period; 
+       
+       --000000 00011 00010 00000 00000 100111
+       instruction <= x"00620829";
+       wait for clock_period; 
+       
+       --000000 00011 00010 00000 00000 100111
+       instruction <= x"0062082A";
+       wait for clock_period;
+       
+       --000000 00011 00010 00000 00000 100111
+       instruction <= x"0062082B";
        wait for clock_period;
        
        --001101 00001 00000 0000 0000 0000 0000 ori R1, R0, 0 
        instruction <= x"34200000";
        wait for clock_period;
        
-       
        --101011 00001 00000 0000 0000 0000 0000 sw R1, R0, 0
        instruction <= x"ac200000";
+       wait for clock_period;
+       
+       --101011 00001 00000 0000 0000 0000 0000 sw R1, R0, 0
+       instruction <= x"07A40002";
+       wait for clock_period;
+       
+        --000001 00001 00000 00000 00000 000010
+       instruction <= x"04200002";
        wait for clock_period;
      end process;         
    

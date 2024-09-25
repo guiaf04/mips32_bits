@@ -41,15 +41,19 @@ begin
          OOR  when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000100101" else
          XXOR when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000100110" else
          NNOR when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000100111" else
-         ORI  when instruction(31 downto 26)="001101" and instruction(10 downto 0)="00000100111" else
-         LW   when instruction(31 downto 26)="100011" and instruction(10 downto 0)="00000100111" else
-         SW   when instruction(31 downto 26)="101011" and instruction(10 downto 0)="00000100111" else
+         SSHL when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000101000" else
+         SSHR when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000101001" else
+         RROL when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000101010" else
+         RROR when instruction(31 downto 26)="000000" and instruction(10 downto 0)="00000101011" else
+         ORI  when instruction(31 downto 26)="001101" else
+         LW   when instruction(31 downto 26)="100011" else
+         SW   when instruction(31 downto 26)="101011" else
          JMP  when instruction(31 downto 26)="000001" and instruction(25 downto 21)="00001" else
          JEQ  when instruction(31 downto 26)="000001" and instruction(25 downto 21)="00010" else
          JLT  when instruction(31 downto 26)="000001" and instruction(25 downto 21)="00100" else
          JGT  when instruction(31 downto 26)="000001" and instruction(25 downto 21)="01000" else
-         PSH  when instruction(31 downto 26)="000010" and instruction(10 downto 6)="00001" else
-         POP  when instruction(31 downto 26)="000010" and instruction(10 downto 6)="00010" else
+         PSH  when instruction(31 downto 26)="000001" and instruction(25 downto 21)="11101" else
+         POP  when instruction(31 downto 26)="000010" and instruction(25 downto 21)="11101" else
          invalid_instruction;
          
     assert i /= invalid_instruction

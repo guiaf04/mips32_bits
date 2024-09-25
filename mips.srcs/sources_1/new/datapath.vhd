@@ -9,7 +9,9 @@ entity datapath is
     d_address : out reg32;
     uins : in microinstruction;
     data : inout reg32;
-    zero, carry : out std_logic
+    zero, carry : out std_logic;
+    ram_in: out std_logic_vector(31 downto 0);
+    ram_out: in std_logic_vector(31 downto 0)
   );
 end datapath;
 
@@ -56,7 +58,10 @@ begin
     -- Multiplexador 4
     d_address <= result;
     
-    WMem : data <= R2 when uins.rw='0' and uins.ce='1' else ext32 when uins.i=LW else(others=>'Z'); 
+    WMem : data <= R2 when uins.rw='0' and uins.ce='1' else ext32 when uins.i=LW else 
+          ram_out when uins.i=POP else(others=>'Z'); 
     
-    M4 : reg_dest <= data when uins.i=LW else result;
+    M4 : reg_dest <= data when uins.i=LW  or uins.i=POP else result;
+    
+    ram_in <= data;
 end Behavioral;

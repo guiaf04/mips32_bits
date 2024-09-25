@@ -21,6 +21,7 @@ Compiling architecture behavioral of entity xil_defaultlib.ula [ula_default]
 Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
 Compiling architecture behavioral of entity xil_defaultlib.registrador [\registrador(init_value="0000000...]
 Compiling architecture behavioral of entity xil_defaultlib.unidadeControle [unidadecontrole_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram [ram_default]
 Compiling architecture behavioral of entity xil_defaultlib.processadorMIPS [processadormips_default]
 Compiling architecture behavioral of entity xil_defaultlib.testbench
 Built simulation snapshot testbench_behav

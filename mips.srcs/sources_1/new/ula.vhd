@@ -17,7 +17,7 @@ architecture Behavioral of ula is
     signal int_ula: reg32;
 begin 
     outula <= int_ula;
-    int_ula <=  op1 - op2                       when  op_ula=SUBU 				else
+    int_ula <=  op1 - op2                       when  op_ula=SUBU or op_ula=PSH else
                 op1 and op2                     when  op_ula=AAND				else 
                 op1 or  op2                     when  op_ula=OOR  or op_ula=ORI	else 
                 op1 xor op2                     when  op_ula=XXOR              	else 
