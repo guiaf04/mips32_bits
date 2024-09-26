@@ -6,10 +6,13 @@ use work.pkg_mips.all;
 entity unidadeControle is
   Port ( 
     clk, rst : in std_logic;
+    rom_en : out std_logic;
     uins : out microinstruction;
     i_address : out reg32;
-    instruction : in reg32;
-    zero, carry: in std_logic
+    instruction : inout reg32;
+    zero, carry: in std_logic;
+    rom_addr   : out reg32;
+    rom_dout   : in reg32
   );
 end unidadeControle;
 
@@ -19,7 +22,7 @@ architecture Behavioral of unidadeControle is
 begin
     -- PC
     rpc: entity work.registrador 
-            generic map(INIT_VALUE=>x"00400000")-- Para o SPIM -> x"00400020"
+            generic map(INIT_VALUE=>x"00000000")-- Para o SPIM -> x"00400020"
                                                 -- Para o MARS -> x"00400000"
             port map(
                 clk=>clk, 
@@ -53,12 +56,15 @@ begin
          invalid_instruction;
          
          
-    incpc <=   ( x"FFFF" & instruction(15 downto 0)) when   i = JMP else                                  --JMP
-               ( x"FFFF" & instruction(15 downto 0)) when  (i = JEQ and zero = '1' and carry = '0') else  --JEQ
-               ( x"FFFF" & instruction(15 downto 0)) when  (i = JLT and zero = '0' and carry = '1') else  --JLT
-               ( x"FFFF" & instruction(15 downto 0)) when  (i = JGT and zero = '0' and carry = '0') else  --JGT
+    incpc <=   ( x"0000" & instruction(15 downto 0)) when   i = JMP else                                  --JMP
+               ( x"0000" & instruction(15 downto 0)) when  (i = JEQ and zero = '1' and carry = '0') else  --JEQ
+               ( x"0000" & instruction(15 downto 0)) when  (i = JLT and zero = '0' and carry = '1') else  --JLT
+               ( x"0000" & instruction(15 downto 0)) when  (i = JGT and zero = '0' and carry = '0') else  --JGT
                pc +4;
     
+    rom_addr <= pc;
+    instruction <= rom_dout;
+    rom_en <= '1';
     
     i_address <= pc; 
          

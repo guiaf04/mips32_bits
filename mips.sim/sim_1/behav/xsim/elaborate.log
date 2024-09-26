@@ -14,14 +14,15 @@ Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package xil_defaultlib.pkg_mips
 Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.registrador [registrador_default]
 Compiling architecture behavioral of entity xil_defaultlib.registrador [\registrador(init_value="0001000...]
 Compiling architecture behavioral of entity xil_defaultlib.bancoRegistradores [bancoregistradores_default]
 Compiling architecture behavioral of entity xil_defaultlib.ula [ula_default]
 Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
-Compiling architecture behavioral of entity xil_defaultlib.registrador [\registrador(init_value="0000000...]
 Compiling architecture behavioral of entity xil_defaultlib.unidadeControle [unidadecontrole_default]
 Compiling architecture behavioral of entity xil_defaultlib.ram [ram_default]
+Compiling architecture syn of entity xil_defaultlib.rom [rom_default]
 Compiling architecture behavioral of entity xil_defaultlib.processadorMIPS [processadormips_default]
 Compiling architecture behavioral of entity xil_defaultlib.testbench
 Built simulation snapshot testbench_behav
