@@ -7,15 +7,15 @@ entity processadorMIPS is
     clk, rst : in std_logic;
     ce, rw : out std_logic;
     i_address: out reg32;
-    instruction: in reg32;
+    instruction: inout reg32;
     data : inout reg32
   );
 end processadorMIPS;
 
 architecture Behavioral of processadorMIPS is
     signal uins: microinstruction;
-    signal zero, carry : std_logic;
-    signal ram_in, ram_out, ram_addr : std_logic_vector(31 downto 0);
+    signal zero, carry,  rom_en : std_logic;
+    signal ram_in, ram_out, ram_addr, rom_addr, rom_dout : std_logic_vector(31 downto 0);
 begin
     dp: entity work.datapath
         port map(
@@ -35,11 +35,14 @@ begin
         port map(
             clk=>clk, 
             rst=>rst, 
+            rom_en => rom_en,
             uins=>uins, 
             i_address=>i_address,
             instruction=>instruction,
             zero => zero,
-            carry => carry
+            carry => carry,
+            rom_addr => rom_addr,
+            rom_dout => rom_dout
         );
         
    ram: entity work.ram
@@ -50,9 +53,18 @@ begin
             we   => uins.rw, 
             clk  => clk  
             );     
+       
+   rom: entity work.rom
+        port map(
+            clk  => clk, 
+            addr => rom_addr,
+            en   => rom_en,
+            dout => rom_dout       
+            );  
             
     ce<=uins.ce;
     
     rw<=uins.rw;
+ 
     
 end Behavioral;
