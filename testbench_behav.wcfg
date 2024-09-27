@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,004.001 ns"></ZoomEndTime>
-      <Cursor1Time time="1,200.000 ns"></Cursor1Time>
+      <ZoomStartTime time="159.740 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,169.741 ns"></ZoomEndTime>
+      <Cursor1Time time="700.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="223"></NameColumnWidth>
-      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="22" />
    <wvobject type="logic" fp_name="/testbench/reset">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
@@ -47,10 +47,6 @@
    <wvobject type="array" fp_name="/testbench/cpu/instruction">
       <obj_property name="ElementShortName">instruction[31:0]</obj_property>
       <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/testbench/cpu/ram/clk">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/testbench/cpu/uins">
       <obj_property name="ElementShortName">uins</obj_property>
@@ -83,6 +79,7 @@
    <wvobject type="array" fp_name="/testbench/cpu/dp/REGS/reg">
       <obj_property name="ElementShortName">reg[0:31][31:0]</obj_property>
       <obj_property name="ObjectShortName">reg[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/testbench/cpu/dp/REGS/AdWP">
       <obj_property name="ElementShortName">AdWP[4:0]</obj_property>
